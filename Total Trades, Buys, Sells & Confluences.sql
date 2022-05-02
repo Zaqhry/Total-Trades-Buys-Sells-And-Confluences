@@ -25,7 +25,7 @@ FROM AUDJPY
 
 SELECT * 
 FROM BUYFTP buy 
-	INNER JOIN SELLFTP sell 
+INNER JOIN SELLFTP sell 
 	ON buy.session = sell.session 
 	ORDER BY buy.session,
 	         sell.session,
@@ -36,7 +36,7 @@ FROM BUYFTP buy
 
 SELECT * 
 FROM BUYTSL buy 
-	INNER JOIN SELLTSL sell 
+INNER JOIN SELLTSL sell 
 	ON buy.session = sell.session 
 	ORDER BY buy.session,
 		 sell.session,
